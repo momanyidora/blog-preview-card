@@ -13,7 +13,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    padding: clamp(1rem, 5vw, 1.25rem);
+    padding: clamp(1rem, 5vw, 2rem);
 }
 
 .card{
@@ -29,18 +29,18 @@ body{
 
 .card-image{
     width: 100%;
-    border-radius: 12px;
-    margin-bottom: 20px;
+    border-radius: 0.75rem;
+    margin-block-end: 20px;
 
 }
 .card-tag{
     background: hsl(47, 88%, 63%);
     display: inline-block;
-    padding: 4px 10px;
+    padding: 4px 0.625rem;
     font-weight: 800;
-    font-size: 12px;
+    font-size: 0.75rem;
     border-radius: 4px;
-    margin-bottom: 12px;
+    margin-bottom: 0.75rem;
 
 }
 
@@ -51,7 +51,11 @@ body{
     font-weight: 800;
     transition: 0.3s;
 }
-
+@media(prefers-reduced-motion: reduce){
+    .card-title{
+        transition: none;
+    }
+}
 
 .card-title:hover{
     color: hsl(47, 88%, 63%);
