@@ -47,11 +47,6 @@ body {
   font-weight: 800;
   transition: 0.3s;
 }
-@media (prefers-reduced-motion: reduce) {
-  .card-title {
-    transition: none;
-  }
-}
 
 .card-title:hover {
   color: hsl(47, 88%, 63%);
